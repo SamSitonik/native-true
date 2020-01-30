@@ -1,0 +1,31 @@
+body {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+label {
+  font-weight: bold;
+  /* for the underlines on the links */
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* We created this for the WidgetList page to move the icons to the left of the page. Only works when the position is absolute*/
+/* .absolute-right {
+  right: 15px;
+} */
+
+.front {
+  z-index: 10;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.click i:hover {
+  color: #777777 !important;
+}
