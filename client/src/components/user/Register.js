@@ -1,7 +1,8 @@
-// // DONE 12-16-19
-// import React, { useState } from "react";
-// import { Link, useHistory } from "react-router-dom";
-// import axios from "axios";
+// DONE 12-16-19
+import React, { useState } from "react";
+import { Link, useHistory } from "react-router-dom";
+import uuid from "uuid";
+import axios from "axios";
 
 // export default function Register(props) {
 //   const [username, setUsername] = useState("");

@@ -1,9 +1,8 @@
 // COMPLETE, 1-9-20
 import React, { useState } from "react";
-
 // MAY NEED TO DELETE LINK because the "sign in" is a function
-// import { Link, useHistory } from "react-router-dom";
-// import axios from "axios";
+import { Link, useHistory } from "react-router-dom";
+import axios from "axios";
 
 // export default function Login(props) {  
 //   const [username, setUsername] = useState("");

@@ -24,7 +24,7 @@ function App() {
     <Router> 
       <Switch>
         {/* UserService */}
-        <Route exact path="/">
+        <Route exact path="/home">
           <Home />
         </Route>
         <Route exact path="/search">

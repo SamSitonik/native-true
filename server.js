@@ -6,6 +6,9 @@ const path = require("path");
 const app = express();
  
 app.use(express.json()) 
+
+// Define routes
+app.use("/api/user", require("./routes/user"));
  
 // Serve static assets in production, Shiyu, code here executed when you test it locally, it will only be executed when you send code online. 
 if (process.env.NODE_ENV === "production") {
