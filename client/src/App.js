@@ -1,4 +1,5 @@
 import React from 'react';
+// import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -15,11 +16,15 @@ import ProfileView from "./components/user/ProfileView";
 import PrivateRoute from "./components/routing/PrivateRoute";
 
 function App() {
+
+  // user data
+  const [users]
+
   return (
     <Router> 
       <Switch>
         {/* UserService */}
-        <Route exact path="/home">
+        <Route exact path="/">
           <Home />
         </Route>
         <Route exact path="/search">
@@ -34,7 +39,7 @@ function App() {
         <Route exact path="/register">
           <Register />
         </Route>
-        <PrivateRoute exact path="/user/:uid">
+        <PrivateRoute exact path="/dashboard/:id">
           <Dashboard />
         </PrivateRoute>
 

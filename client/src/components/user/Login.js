@@ -27,16 +27,12 @@ import React, { useState } from "react";
   return (
     <div className="container">
       <h2>Artist Sign in to NativeTrue</h2>
-      <form onSubmit={onSubmit}>
+      <form>
         <div className="form-group">
           <input
             type="text"
             className="form-control"
             placeholder="Username or email address"
-            value={username}
-            onChange={e=> {      
-              setUsername(e.target.value);
-            }}
           />
         </div>
 
@@ -45,16 +41,43 @@ import React, { useState } from "react";
             type="password"
             className="form-control"
             placeholder="Password"
-            value={password}
-            onChange={e=> {
-              setPassword(e.target.value);
-            }}
           />
         </div>
         <button className="btn btn-success btn-block">Sign in</button>
       </form>
     </div>
-    );
-  }  
-//   );
+    )
+
+
+// return (
+//   <div className="container">
+//     <h2>Artist Sign in to NativeTrue</h2>
+//     <form onSubmit={onSubmit}>
+//       <div className="form-group">
+//         <input
+//           type="text"
+//           className="form-control"
+//           placeholder="Username or email address"
+//           value={username}
+//           onChange={e=> {      
+//             setUsername(e.target.value);
+//           }}
+//         />
+//       </div>
+
+//       <div className="form-group">
+//         <input
+//           type="password"
+//           className="form-control"
+//           placeholder="Password"
+//           value={password}
+//           onChange={e=> {
+//             setPassword(e.target.value);
+//           }}
+//         />
+//       </div>
+//       <button className="btn btn-success btn-block">Sign in</button>
+//     </form>
+//   </div>
+//   )
 // }
