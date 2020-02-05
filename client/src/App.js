@@ -12,13 +12,13 @@ import Register from "./components/user/Register";
 import Dashboard from "./components/user/Dashboard";
 import ProfileView from "./components/user/ProfileView";
 
-// Routing Components
-import PrivateRoute from "./components/routing/PrivateRoute";
+// // Routing Components
+// import PrivateRoute from "./components/routing/PrivateRoute";
 
 function App() {
 
-  // user data
-  const [users]
+//   // user data
+//   const [users]
 
   return (
     <Router> 
@@ -39,11 +39,11 @@ function App() {
         <Route exact path="/register">
           <Register />
         </Route>
-        <PrivateRoute exact path="/dashboard/:id">
+        <Route exact path="/dashboard/:id">
           <Dashboard />
-        </PrivateRoute>
+        </Route>
 
-        <Route exact path="/user/:uid/view" component={ProfileView} /> 
+        <Route exact path="/user/:id/view" component={ProfileView} /> 
 
         {/* Home Page */}
         <Route path="/">
