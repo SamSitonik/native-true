@@ -4,7 +4,11 @@ const express = require("express");
 const path = require("path");
 // Init express
 const app = express();
+const connectDB = require(".config/db");
  
+// Connect DB
+connectDB();
+
 app.use(express.json()) 
 
 // Define routes

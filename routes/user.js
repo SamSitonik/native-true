@@ -1,5 +1,12 @@
 const express = require("express");
+const jwt = require('jsonwebtoken');
+const config = require('config');
+const bcrypt = require('bcryptjs');
+
 const router = express.Router();
+
+const auth = require('../middleware/auth');
+const User = require('../models/User');
 
 const users = [
   {
@@ -98,4 +105,3 @@ router.put("/", (req, res) => {
 });
 
 module.exports = router;
-© 2020 G
